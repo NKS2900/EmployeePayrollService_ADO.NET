@@ -10,7 +10,6 @@ namespace EmployeePayrollService_ADO.NET
             Console.WriteLine("===================");
             EmployeeRepo emp = new EmployeeRepo();
             EmployeeModel empModel = new EmployeeModel();
-            emp.GetAllRecords();
 
             empModel.EmployeeID = 107;
             empModel.EmployeeName = "Ajay";
@@ -26,7 +25,9 @@ namespace EmployeePayrollService_ADO.NET
             empModel.Tax = 5000.00;
 
             //bool result=emp.InsertEmployee(empModel);
-            
+            //emp.GetAllRecords();
+            emp.GetPerticularEmployeeData();
+
         }
     }
 }
