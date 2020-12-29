@@ -6,10 +6,11 @@ namespace EmployeePayrollService_ADO.NET
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("**ADO.NET**");
+            Console.WriteLine("*****ADO.NET*****");
+            Console.WriteLine("===================");
             EmployeeRepo emp = new EmployeeRepo();
             EmployeeModel empModel = new EmployeeModel();
-            emp.CheckConnection();
+            emp.GetAllRecords();
         }
     }
 }
