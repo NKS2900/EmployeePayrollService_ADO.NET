@@ -10,7 +10,7 @@ namespace EmployeePayrollService_ADO.NET
             Console.WriteLine("===================");
             EmployeeRepo emp = new EmployeeRepo();
             EmployeeModel empModel = new EmployeeModel();
-           // emp.GetAllRecords();
+            emp.GetAllRecords();
 
             empModel.EmployeeID = 107;
             empModel.EmployeeName = "Ajay";
@@ -25,11 +25,8 @@ namespace EmployeePayrollService_ADO.NET
             empModel.NetPay = 4000;
             empModel.Tax = 5000.00;
 
-            bool result=emp.InsertEmployee(empModel);
-            if (result)
-                Console.WriteLine("Record added successfully...");
-            else
-                Console.WriteLine("not added!!!!!!");
+            //bool result=emp.InsertEmployee(empModel);
+            
         }
     }
 }

@@ -28,20 +28,21 @@ namespace EmployeePayrollService_ADO.NET
                     {
                         while (dr.Read())
                         {
-                            employeeModel.EmployeeID = dr.GetInt32(0);
-                            employeeModel.EmployeeName = dr.GetString(1);
+                            employeeModel.EmployeeID = dr.GetInt32(0);//
+                            employeeModel.EmployeeName = dr.GetString(1);//
                             employeeModel.BasicPay = Convert.ToDouble(dr.GetDecimal(2));
-                            employeeModel.start_date = dr.GetDateTime(3);
-                            employeeModel.gendre = Convert.ToChar(dr.GetString(4));
-                            employeeModel.PhoneNumber = dr.GetString(5);
+                            employeeModel.start_date = dr.GetDateTime(3);//
+                            employeeModel.gendre = Convert.ToChar(dr.GetString(4));//
+                            employeeModel.PhoneNumber = dr.GetString(5);//
                             employeeModel.Address = dr.GetString(6);
-                            employeeModel.Department = dr.GetString(7);
+                            employeeModel.Department = dr.GetString(7);//
                             employeeModel.Deduction = dr.GetDouble(8);
                             employeeModel.TaxablePay = (float)dr.GetSqlSingle(9);
-                            employeeModel.NetPay = (float)dr.GetSqlSingle(10);
+                            employeeModel.NetPay = (float)dr.GetSqlSingle(10);//
                             employeeModel.Tax = dr.GetDouble(11);
 
-                            Console.WriteLine(employeeModel.EmployeeID + " , " + employeeModel.EmployeeName + " , " + employeeModel.Address + " , " + employeeModel.gendre + " , " + employeeModel.Department + " , " + employeeModel.NetPay + " , " + employeeModel.start_date + " , " + employeeModel.PhoneNumber);
+                            Console.WriteLine(employeeModel.EmployeeID + " , " + employeeModel.EmployeeName + " , " + employeeModel.Address + " , " + employeeModel.gendre + " , " + employeeModel.Department + " , " + employeeModel.NetPay + " , " + employeeModel.start_date + " , " + employeeModel.PhoneNumber
+                                                +" , "+employeeModel.BasicPay+" , "+employeeModel.Address+" , "+employeeModel.Deduction+" , "+employeeModel.TaxablePay+" , "+employeeModel.Tax);
                         }
                     }
                     else
