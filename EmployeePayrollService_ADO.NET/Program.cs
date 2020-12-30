@@ -26,8 +26,11 @@ namespace EmployeePayrollService_ADO.NET
 
             //bool result=emp.InsertEmployee(empModel);
             //emp.GetAllRecords();
-            emp.GetPerticularEmployeeData();
+            //emp.GetPerticularEmployeeData();
+            emp.AggregateFunctionOperations();
 
         }
+
+
     }
 }
